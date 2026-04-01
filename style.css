@@ -1,0 +1,213 @@
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    background-color: #e8dccb;
+    color: #4a3a2f;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative; /* IMPORTANT */
+}
+
+
+.logo {
+    position: absolute;
+    left: 30px;
+}
+
+.logo img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+
+
+nav {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #3a2a1f;
+    padding: 10px 18px;
+    border: 2px solid #3a2a1f;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+nav a.active {
+    background-color: #b7773c;
+    color: white;
+}
+
+nav a:hover {
+    background-color: #d1a27a;
+}
+
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #bca48c;
+    margin: 10px 0;
+}
+
+
+.tex0 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+
+.text1 {
+    max-width: 600px;
+}
+
+.text1 h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.text2 {
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #7a5a45;
+}
+
+.description {
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+button {
+    padding: 12px 20px;
+    background-color: #b7773c;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #8c5529;
+}
+
+
+.cup img {
+    width: 260px;
+    max-width: 100%; 
+}
+
+
+.text3 {
+    width: 60%;
+    margin: 40px auto;
+    padding: 25px;
+    background-color: #d9b48f;
+    border-radius: 20px;
+    text-align: center;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+    padding: 20px;
+    background-color: #caa67d;
+    font-size: 14px;
+}
+
+
+@media (max-width: 1024px) {
+    .text0 {
+        padding: 40px;
+    }
+
+    .text1 h1 {
+        font-size: 30px;
+    }
+
+    .text3 {
+        width: 75%;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .logo {
+        position: static; 
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+  
+    .text0 {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .cup img {
+        width: 200px;
+        margin-top: 20px;
+    }
+
+    .text1 h1 {
+        font-size: 26px;
+    }
+
+    .text3 {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    nav a {
+        font-size: 12px;
+        padding: 8px 12px;
+    }
+
+    .text1 h1 {
+        font-size: 22px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .cup img {
+        width: 160px;
+    }
+}
+}

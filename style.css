@@ -18,7 +18,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 20px;
-    position: relative; /* IMPORTANT */
+    position: relative; 
 }
 
 
@@ -68,21 +68,21 @@ hr {
 }
 
 
-.tex0 {
+.text0 {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 50px;
-    gap: 30px;
+    gap: 10px;
 }
 
 
 .text1 {
-    max-width: 600px;
+    max-width: 650px;
 }
 
 .text1 h1 {
-    font-size: 36px;
+    font-size: 41px;
     margin-bottom: 15px;
 }
 
@@ -114,10 +114,17 @@ button:hover {
 
 
 .cup img {
-    width: 260px;
+    width: 300px;
     max-width: 100%; 
+    transform: translateX(-20px);
 }
 
+
+.cup{
+    display: flex;
+    justify-content: center;
+    
+}
 
 .text3 {
     width: 60%;
@@ -131,11 +138,12 @@ button:hover {
 footer {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
     gap: 10px;
     padding: 20px;
     background-color: #caa67d;
     font-size: 14px;
+    text-align: center;
 }
 
 
@@ -173,11 +181,13 @@ footer {
     .text0 {
         flex-direction: column;
         text-align: center;
+        gap: 20px;
         padding: 30px 20px;
     }
 
     .cup img {
-        width: 200px;
+        width: 220px;
+        transform: none;
         margin-top: 20px;
     }
 
@@ -209,5 +219,4 @@ footer {
     .cup img {
         width: 160px;
     }
-}
 }

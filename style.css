@@ -145,7 +145,19 @@ footer {
     font-size: 14px;
     text-align: center;
 }
+.button {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #b7773c;
+    color: white;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+}
 
+.button:hover {
+    background-color: #8c5529;
+}
 
 @media (max-width: 1024px) {
     .text0 {

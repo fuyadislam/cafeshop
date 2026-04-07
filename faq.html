@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>North End Cafe | FAQ</title>
+    <link rel="stylesheet" href="faq.css" />
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <img src="logo.png" alt="North End Cafe Logo">
+        </div>
+
+        <nav>
+            <a href="home.html">HOME</a>
+            <a href="menu.html">MENU</a>
+            <a href="opening.html">OPENING HOURS</a>
+            <a href="about.html">ABOUT</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="sitemap.html">SITE MAP</a>
+        </nav>
+    </div>
+</header>
+
+<hr>
+
+<main class="container">
+    <div class="page-heading">
+        <h1>Frequently Asked Questions</h1>
+        <p>Everything people usually ask before coming in.</p>
+    </div>
+
+    <section class="faq-box">
+        <div class="faq-item open">
+            <button class="faq-question">Do I need to book a table?<span>+</span></button>
+            <div class="faq-answer">No booking is needed. We are mostly a walk-in cafe, so you can come in and grab a table whenever space is available.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you have free Wi-Fi?<span>+</span></button>
+            <div class="faq-answer">Yes, we offer free Wi-Fi for customers, which makes the cafe a nice place for studying, working or relaxing.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you have vegan or vegetarian options?<span>+</span></button>
+            <div class="faq-answer">Yes, we have both vegan and vegetarian options available on the menu every day.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Can I get takeaway?<span>+</span></button>
+            <div class="faq-answer">Yes, drinks and food can both be ordered for takeaway if you are in a hurry.</div>
+        </div>
+
+        <div class="faq-item">
+            <button class="faq-question">Do you accept card payments?<span>+</span></button>
+            <div class="faq-answer">Yes, we accept cash, card and contactless payments.</div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <p>123 North End Street, Dublin</p>
+    <p>| Mon–Sun: 8am–6pm</p>
+    <p>| ne.cafe@northendcafe.ie</p>
+    <p>© 2026 North End Cafe</p>
+</footer>
+
+<script>
+document.querySelectorAll('.faq-question').forEach(button => {
+    button.addEventListener('click', () => {
+        const item = button.parentElement;
+        document.querySelectorAll('.faq-item').forEach(faq => {
+            if (faq !== item) {
+                faq.classList.remove('open');
+            }
+        });
+        item.classList.toggle('open');
+    });
+});
+</script>
+
+</body>
+</html>
